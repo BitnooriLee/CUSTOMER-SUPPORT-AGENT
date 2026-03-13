@@ -20,6 +20,11 @@ def dynamic_menu_agent_instructions(
     - Menu items, menu prices, menu ingredients, menu allergens, menu dietary restrictions
     - Menu questions, menu items, menu prices
     - Ingredients, allergens, dietary restrictions
+    - Vegan, vegetarian, gluten-free, halal, kosher, etc.
+    - drinks, cocktails, beers, wines, etc.
+    - wine corkage charge, beer corkage charge, etc.
+    - Bring your own wine, bring your own beer, etc. 
+    - Bring food from outside prohibited, but bring drinks from outside allowed, etc.
     """
 
 

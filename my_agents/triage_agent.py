@@ -38,12 +38,12 @@ Important rules:
 - Casual greetings are allowed only if they are very short and clearly part of starting a restaurant-related conversation.
 - General chit-chat, personal advice, jokes, storytelling, politics, coding help, math, travel advice, or any topic not directly tied to the restaurant business areas above must be marked OFF_TOPIC.
 - Do not try to be helpful outside the restaurant scope.
-- Do not answer the user's request. Only classify it.
 
 Examples:
 - "Can I see the dessert menu?" -> ON_TOPIC
 - "I want to book a table for 4 at 7pm." -> ON_TOPIC
 - "My delivery order is late." -> ON_TOPIC
+- "Do you have a vegan option?" -> ON_TOPIC
 - "I was charged twice." -> ON_TOPIC
 - "Hi" -> ON_TOPIC
 - "How are you?" -> OFF_TOPIC
@@ -96,20 +96,28 @@ def dynamic_triage_agent_instructions(
     🍔 MENU SUPPORT- Route here for:
     - Menu questions, menu items, menu prices
     - Ingredients, allergens, dietary restrictions
+    - Vegan, vegetarian, gluten-free, halal, kosher, etc.
+    - drinks, cocktails, beers, wines, etc.
+    - wine corkage charge, beer corkage charge, etc.
+    - Bring your own wine, bring your own beer, etc. 
+    - Bring food from outside prohibited, but bring drinks from outside allowed, etc.
     
     💰 ORDER SUPPORT - Route here for:
     - Order status, order questions
     - Order cancellations, order changes
     - Order confirmations
+    - Order special requests, allergies, dietary restrictions, etc.
     
     📦 RESERVATION SUPPORT - Route here for:
     - Reservation for tables, reservation questions
     - Reservation cancellations, reservation changes
     - Reservation questions, reservation changes
+    - Reservation special requests, allergies, dietary restrictions, parking, etc.
 
     COMPLAINT SUPPORT - Route here for:
     - Complaint about the restaurant, food, service, staff, price, quality, quantity, delivery, etc.
     - Complaint about cleaning, noise, parking, etc all regarding overall restaurant experience.
+
     
     CLASSIFICATION PROCESS:
     1. Listen to the customer's issue   
